@@ -13,16 +13,16 @@
 			
 			var dogs = [{
 				breed: "Berner",
-				Temperament: "mild"
+				temperament: "mild"
 			}, {
 				breed: "Chow Chow",
-				Temperament: "aggressive"
+				temperament: "aggressive" 
 			}, {
 				breed: "Border Collie",
-				Temperament: "mild"
+				temperament: "mild"
 			}, {
 				breed: "Dalmatian",
-				Temperament:"medium"
+				temperament:"medium"
 			}];
 			
 		/* Starting at index 0, ending at index 3
@@ -33,9 +33,13 @@
 				
 				var item = dogs[i]; 
 				
-				console.log(i);
+				if(item.temperament == "mild") {
+				
 				console.log(item);
-			}
+				} // end of if statement
+				
+				
+			} // end of for loop 
 			
 			
 		
