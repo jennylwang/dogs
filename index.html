@@ -28,18 +28,30 @@
 		/* Starting at index 0, ending at index 3
 		 * increment by one every time
 		 */	
+		 
+		 var bestDogs = [];
+		 var nonBests = [];
 			
 			for(var i=0;i<4;i++){
 				
 				var item = dogs[i]; 
 				
 				if(item.temperament == "mild") {
+					
+					bestDogs.push(item);
+					
+				}else{
+					
+					nonBests.push(item);
 				
-				console.log(item);
-				} // end of if statement
+				} // End of this conditional if-else.  
 				
 				
 			} // end of for loop 
+			
+			console.log(bestDogs);
+			console.log(nonBests);
+			
 			
 			
 		
