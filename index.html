@@ -34,15 +34,18 @@
 			
 			for(var i=0;i<4;i++){
 				
-				var item = dogs[i]; 
-				
-				if(item.temperament == "mild") {
+				var pets = dogs[i]; // Created variable "pets" to prevent repetition 
+								
+				if(pets.temperament == "mild") {
 					
-					bestDogs.push(item);
+					bestDogs.push(pets);
 					
 				}else{
+					/* If the dog has mild temperament, group into bestDogs, all else, put into nonBests. 
+				 */
 					
-					nonBests.push(item);
+					nonBests.push(pets);
+				
 				
 				} // End of this conditional if-else.  
 				
