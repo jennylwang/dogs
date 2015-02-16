@@ -29,12 +29,15 @@
 		 * increment by one every time
 		 */	
 		 
+		 function sortDogs(dogsList){
+		 	
+		 	
 		 var bestDogs = [];
 		 var nonBests = [];
 			
 			for(var i=0;i<4;i++){
 				
-				var pets = dogs[i]; // Created variable "pets" to prevent repetition 
+				var pets = dogs[i]; // Replaced "item" variable to "pets" to prevent repetition 
 								
 				if(pets.temperament == "mild") {
 					
@@ -52,11 +55,16 @@
 				
 			} // end of for loop 
 			
+			
 			console.log(bestDogs);
 			console.log(nonBests);
 			
+			} // end of sortDogs function - sort dogs into bestDogs and nonBests
 			
 			
+			sortDogs(dogs);
+			
+		
 		
 			
 			
