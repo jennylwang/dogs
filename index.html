@@ -78,21 +78,29 @@
 			
 			} // end of sortDogs function - sort dogs into bestDogs and nonBests
 			
-			
-			sortDogs(dogs); 
-			/*This function sorts my original dog list into bestDogs and nonBests depending on their temperament.  
+			sortDogs(dogs)
+			/*The sortDogs function sorts my original dog list into bestDogs and nonBests depending on their temperament.  
 			 *If the dog's temperament is mild, it'll go into bestDogs. 
 			 *All other temperaments will go into nonBests. 
 			 * I expect Berner and Border Collie to be grouped together and Chow Chow and Dalmatian to be grouped together
 			 */
 			
+			var jwBestDogs = sortDogs(dogs); 
+			
+			
+			console.log(jwBestDogs) // I expect two objects in the list, Berner and Border Collie, since both are mild
+			
+			
 			sortDogs(moreDogs);
-			/*This sorts my second dog list into bestDogs and nonBests
+			/*The sortDogs function sort my second dog list into bestDogs and nonBests
 			 * I expect German Shepherd, Malamute and Poodle to be grouped together
 			 * New Foundland will show up on the list by itself
-			 */ 
-		
-		
+			 */
+			
+			var jwOtherFavDogs = sortDogs(moreDogs);
+			
+			
+			console.log(jwOtherFavDogs) // I expect only one dog in the list, New Foundland, since it's the only mild tempered dog in the list
 			
 			
 			
