@@ -25,6 +25,21 @@
 				temperament:"medium"
 			}];
 			
+			var moreDogs = [{
+				breed: "German Shepherd",
+				temperament: "aggressive"
+			}, {
+				breed: "New Foundland",
+				temperament: "mild" 
+			}, {
+				breed: "Malamute",
+				temperament: "aggressive"
+			}, {
+				breed: "Poodle",
+				temperament:"medium"
+			}];
+			
+			
 		/* Starting at index 0, ending at index 3
 		 * increment by one every time
 		 */	
@@ -37,7 +52,7 @@
 			
 			for(var i=0;i<4;i++){
 				
-				var pets = dogs[i]; // Replaced "item" variable to "pets" to prevent repetition 
+				var pets = dogsList[i]; // Replaced "item" variable to "pets" to prevent repetition 
 								
 				if(pets.temperament == "mild") {
 					
@@ -62,8 +77,18 @@
 			} // end of sortDogs function - sort dogs into bestDogs and nonBests
 			
 			
-			sortDogs(dogs);
+			sortDogs(dogs); 
+			/*This function sorts my original dog list into bestDogs and nonBests depending on their temperament.  
+			 *If the dog's temperament is mild, it'll go into bestDogs. 
+			 *All other temperaments will go into nonBests. 
+			 * I expect Berner and Border Collie to be grouped together and Chow Chow and Dalmatian to be grouped together
+			 */
 			
+			sortDogs(moreDogs);
+			/*This sorts my second dog list into bestDogs and nonBests
+			 * I expect German Shepherd, Malamute and Poodle to be grouped together
+			 * New Foundland will show up on the list by itself
+			 */ 
 		
 		
 			
